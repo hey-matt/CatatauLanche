@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatau Lanches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FsTXYMq5PSHv5bgKYlzqd9Ig9cw1dbcMEQ&s')">
+    <div class="container">
+        <div class="header">
+            <nav>
+              <img class="logo" src="https://scontent.fpmw5-1.fna.fbcdn.net/v/t39.30808-1/307568538_773367686952283_5846254105307293554_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=CjVIYyp8A7sQ7kNvgFF8-ZL&_nc_zt=24&_nc_ht=scontent.fpmw5-1.fna&_nc_gid=A_uJDoyWQhBNAxfNmcn1mQG&oh=00_AYB-R3e56rZBOBCIKsPUNwkKs02p3A6mIDSQnU8diz0dLg&oe=676016B4" alt="Logo da Catatau Lanches">
+              <ul>
+                <li><a href="Cardapio.html" class="menu-item">Cardápio</a></li>
+                <li><a href="agateemieli2.html" class="menu-item">Sobre Nós</a></li>
+                <li><a href="Contato.html" class="menu-item">Contato</a></li>
+              </ul>
+            </nav>
+            <h1>Catatau Lanches</h1>
+          </div>
+          <p style="font-size: 25px;text-align: center;">Contate-nos para pedidos personalizados!</p>
+          <p style="text-align: center;font-size: 50px;">Instagram: <a href="https://www.instagram.com/tiagopfig1/" target="_blank">tiagopfig1</a></p>
+          <p style="font-size: 25px;text-align: center;">Fone: +55 63 98468-4762</p>
+          <p style="font-size: 25px;text-align: center;">Local: 307 Norte</p>
+          <p id="easter-egg-menu" style="display: none; font-size: 16px; text-align: center;"></p>
+          <footer>
+              <p id="easter-egg" style="cursor: pointer;">&copy; 2023 Catatau Lanches</p>
+          </footer>
+    </div>
+
+    <script>
+        let clickCount = 0;
+
+        document.getElementById('easter-egg').addEventListener('click', () => {
+            clickCount++;
+            if (clickCount === 5) {
+                const menuText = `Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+Sufixo DNS específico de conexão. . . . . . :
+
+Adaptador de Rede sem Fio Conexão Local* 2:
+
+   Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+   Sufixo DNS específico de conexão. . . . . . :
+
+Adaptador de Rede sem Fio Wi-Fi:
+
+   Sufixo DNS específico de conexão. . . . . . : ifto.local
+   Endereço IPv6 de link local . . . . . . . . : fe80::8427:d9f9:6cde:13bc%5
+   Endereço IPv4. . . . . . . . . . . . . . . . . . . . . . . . . . . . . : 20.20.8.165
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.0.0
+   Gateway Padrão. . . . . . . . . . . . . . . : 20.20.20.254`;
+
+                // Exibe o menu no parágrafo
+                document.getElementById('easter-egg-menu').style.display = 'block';
+                document.getElementById('easter-egg-menu').innerText = menuText;
+            }
+            if (clickCount === 6){
+              const menuText = ("");
+            }
+        });
+    </script>
+</body>
+</html>
